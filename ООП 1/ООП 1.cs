@@ -13,14 +13,14 @@ namespace ООП_1
         {
             // 1 задание
             Pokupatel pokupatel1 = new Pokupatel();
-            pokupatel1.firstName = "Иван";
             pokupatel1.lastName = "Иванов";
+            pokupatel1.firstName = "Иван";
             pokupatel1.middleName = "Андреевич";
             pokupatel1.address = "Екатеринбург";
             pokupatel1.numberCard = 321287394;
             pokupatel1.numberBank = 635249102;
-            Console.WriteLine("Имя: " + pokupatel1.firstName);
             Console.WriteLine("Фамилия: " + pokupatel1.lastName);
+            Console.WriteLine("Имя: " + pokupatel1.firstName);
             Console.WriteLine("Отчество: " + pokupatel1.middleName);
             Console.WriteLine("Адрес: " + pokupatel1.address);
             Console.WriteLine("Номер кредитной карты: " + pokupatel1.numberCard);
@@ -31,10 +31,10 @@ namespace ООП_1
             Abonent abonent1 = new Abonent();
             Console.Write("Введите идентификационный номер абонента: ");
             abonent1.iNumber = int.Parse(Console.ReadLine());
-            Console.Write("Введите имя абонента: ");
-            abonent1.firstName = Console.ReadLine();
             Console.Write("Введите фамилию абонента: ");
             abonent1.lastName = Console.ReadLine();
+            Console.Write("Введите имя абонента: ");
+            abonent1.firstName = Console.ReadLine();
             Console.Write("Введите отчество абонента: ");
             abonent1.middleName = Console.ReadLine();
             Console.Write("Введите время международных переговоров абонента(мин): ");
@@ -44,8 +44,8 @@ namespace ООП_1
             Console.WriteLine();
 
             Console.WriteLine("Идентификационный номер: " + abonent1.iNumber);
-            Console.WriteLine("Имя: " + abonent1.firstName);
             Console.WriteLine("Фамилия: " + abonent1.lastName);
+            Console.WriteLine("Имя: " + abonent1.firstName);
             Console.WriteLine("Отчество: " + abonent1.middleName);
             Console.WriteLine("Время международных переговоров(мин): " + abonent1.timeMezhgor);
             Console.WriteLine("Время городских переговоров(мин): " + abonent1.timeGor);
@@ -75,8 +75,8 @@ namespace ООП_1
     }
     class Pokupatel
     {
-        public string firstName;
         public string lastName;
+        public string firstName;
         public string middleName;
         internal string address;
         internal int numberCard;
@@ -86,8 +86,8 @@ namespace ООП_1
     class Abonent
     {
         public int iNumber;
-        public string firstName;
         public string lastName;
+        public string firstName;
         public string middleName;
         internal string timeMezhgor;
         internal string timeGor;
